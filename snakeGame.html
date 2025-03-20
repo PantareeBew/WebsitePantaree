@@ -1,0 +1,331 @@
+<!DOCTYPE HTML>
+
+<html>
+	<head>
+		<title>Snake Game</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<a href="index.html" class="logo">Portfolio</a>
+					</header>
+
+				<!-- Nav -->
+					<nav id="nav">
+						<ul class="links">
+							<li class="active"><a href="index.html">Work</a></li>
+							<li><a href="generic.html">About</a></li>
+							<li><a href="elements.html">CV</a></li>
+						</ul>
+						<ul class="icons">
+							<!-- <li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
+							<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li> -->
+							<li><a href="#" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
+							<li><a href="#" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+						</ul>
+					</nav>
+
+				<!-- Main -->
+					<div id="main">
+
+						<!-- Post -->
+							<section class="post">
+								<header class="major">
+									<!-- <span class="date">September 4, 2024</span> -->
+									<h1>Accesible Snake Game<br />
+									</h1>
+									<blockquote>
+                                        “Inclusive Design doesn’t mean you’re designing one thing for all people. 
+                                        You’re designing a diversity of ways to participate so everyone has a sense of belonging.”
+                                    </blockquote>
+                                    <p>- <cite>Susan Goltsman</cite></p>                                
+								</header>
+                                <hr>
+								<h2 class="overview">📋 Project Overview ✏️</h2>
+								<ul>
+									<li><b>Role: </b>UX Designer, Researcher, and Accessibility Analyst</li>
+									<li><b>Methods:</b> Usability testing, think-aloud protocol, personas</li>
+									<li><b>Deliverables:</b> Accessibility evaluation report, personas, usability testing findings, design iteration recommendations, inclusive design strategy, high-fidelity prototypes</li>
+									<li><b>Skills:</b> UX/UI design, user research, accessibility testing (WCAG compliance)</li>
+									<li><b>Tools:</b> Microsoft Forms, Microsoft word, Figma, Microsoft Teams/Zoom, WebAIM contrast checker, Color Blindness Simulator</li>
+								</ul>
+								<div class="image main"><img src="images/snakeGIF.gif" alt="gif" /></div>
+								<p>This project involved the end-to-end design and accessibility 
+                                    research of a Snake game application, ensuring inclusive
+                                     experiences for users with visual, auditory, motor, 
+                                     and cognitive impairments. The game features four 
+                                     modes (Classic, Speed Run, Multiplayer, Custom) with 
+                                     multi-modal control options (mouse, keyboard, game 
+                                     controller), high-contrast UI elements, and customizable
+                                    settings for accessibility. <br><br>
+
+                                    I independently conducted research, UX/UI design, 
+                                    sketches, prototyping, and usability testing with 
+                                    five participants, identifying areas for improvement 
+                                    such as UI clarity in multiplayer mode, keyboard focus 
+                                    visibility, and distinguishability of game elements. 
+                                    Iterative design adjustments were made based on WCAG 
+                                    guidelines to ensure compliance in keyboard 
+                                    accessibility, contrast ratios, and audio settings, 
+                                    making the game more accessible for all users.                                    
+                                    </p>
+								<hr>
+								<h2>🧑‍🦽‍➡️Research & Personas</h2>
+								<p>To ensure the game was accessible, I created personas representing users with different impairments. Each persona helped me identify specific challenges and solutions to implement in the game design.</p>
+								<div class="table-wrapper" id="table_snake">
+									<table>
+										<thead>
+											<tr>
+												<th>Peersona</th>
+												<th>Impairment</th>
+												<th>Key Challenges</th>
+												<th>Design Needs</th>									
+											</tr>
+										</thead>
+										<tbody>
+											<tr>
+												<td>🧑‍💻 Oiver</td>
+												<td>Protanopia (Color Blindness)</td>
+												<td>Can't differentiate red/green UI elements</td>
+												<td>High contrast UI, pattern-based differentiation</td>
+											</tr>
+											<tr>
+												<td>🧔🎮  Alex</td>
+												<td>Motor Impairment (Parkinson’s)</td>
+												<td>Struggles with small buttons & precise movements</td>
+												<td>Large buttons, keyboard navigation</td>
+											</tr>
+											<tr>
+												<td>🎧🦻 Emily</td>
+												<td>Hearing Impairment</td>
+												<td>Can't rely on sound cues</td>
+												<td>Visual notifications, subtitles for audio feedback</td>
+											</tr>
+											<tr>
+												<td>🧠👧 Maya</td>
+												<td>Cognitive Impairment (ASD)</td>
+												<td>Overwhelmed by cluttered UI</td>
+												<td>Predictable navigation, structured layout</td>
+											</tr>
+										</tbody>
+										
+									</table>	
+								</div>
+								<br>
+								<div class="box alt">
+									<div class="row gtr-50 gtr-uniform">
+										<div class="col-6"><span class="image fit"><img src="images/visual.png" alt="" /></span></div>
+										<div class="col-6"><span class="image fit"><img src="images/motor.png" alt="" /></span></div>
+										<!-- break --> <br >
+										<div class="col-6"><span class="image fit"><img src="images/auditory.png" alt="" /></span></div>
+										<div class="col-6"><span class="image fit"><img src="images/cognitive.png" alt="" /></span></div>
+										
+									</div>
+								</div>
+								<hr>
+
+								<h2>🔬👩‍🎨Research & Design Process</h2>
+								<p><b>My research phase included:</b></p>
+								<ul>											
+									<li>🔍 Reviewing accessibility principles, including <b>Medical vs. Social Models of Disability</b></li>
+									<li>📑 Studying <b>assistive technology and its impact on digital experiences</b>  </li>
+									<li>🎯 Conducting a <b>comparative analysis of accessible and non-accessible games</b>  </li>
+								</ul>
+								<p>After the research phase, I moved <b>into UX/UI design:</b></p>
+								<ul>											
+									<li><b>1️⃣ Sketches & Wireframes – </b>Created low-fidelity wireframes to structure the interface</li>
+									<div class="box alt">
+										<div class="row gtr-50 gtr-uniform">
+											<div class="col-6"><span class="image fit"><img src="images/snake1.png" alt="" /></span></div>
+											<div class="col-6"><span class="image fit"><img src="images/snake3.png" alt="" /></span></div>
+									
+										</div>
+									</div>
+									<li><b>2️⃣ High-Fidelity Prototypes –</b>Designed the final UI, ensuring accessibility best practices  </li>
+									<div class="box alt">
+										<div class="row gtr-50 gtr-uniform">
+											<div class="col-6"><span class="image fit"><img src="images/sn2.png" alt="" /></span></div>
+											<div class="col-6"><span class="image fit"><img src="images/sn3.png" alt="" /></span></div>
+									
+										</div>
+									</div>
+									<li><b>3️⃣ Game UI Considerations –</b>Designed with simple navigation, scalable text, high-contrast colors, and customizable controls  </li>
+									<div class="box alt">
+										<div class="row gtr-50 gtr-uniform">
+											<div class="col-6"><span class="image fit"><img src="images/snUI1.png" alt="" /></span></div>
+											<div class="col-6"><span class="image fit"><img src="images/snUI2.png" alt="" /></span></div>
+											<!-- break --> <br >
+											<div class="col-6"><span class="image fit"><img src="images/snUI3.png" alt="" /></span></div>
+											<div class="col-6"><span class="image fit"><img src="images/snUI4.png" alt="" /></span></div>
+											
+										</div>
+									</div>
+								</ul>
+								
+								<hr>
+
+								<h2>📉Usability Testing Results & Insights</h2>
+								
+								<h3>🎮 Unclear Button Label</h3>
+								<ul>						
+									<li><b>Issue Identified</b><br>The button "random again" was not clear between randomising some people to join the game or randomising the skin colour.</li>
+									<li><b>Design Solution</b><br>Clearer button labeling and tooltips to specify function.	</li>										
+									<div class="image main"><img src="images/before1.png" alt="gif" /></div>
+								</ul>
+
+								<h3>🕹️ Grid-based UI in Multiplayer Overwhelms Users</h3>
+								<ul>						
+									<li><b>Issue Identified</b><br>Players felt the interface was cluttered, making it difficult to focus.</li>
+									<li><b>Design Solution</b><br>Simplified UI with spacing adjustments and visual hierarchy improvements.	</li>										
+								</ul>
+
+								<h3>🐍 Snakes and Obstacles Look Too Similar</h3>
+								<ul>						
+									<li><b>Issue Identified</b><br>Players struggled to differentiate between their snake and obstacles.</li>
+									<li><b>Design Solution</b><br>Introduced distinct shapes and outlines for obstacles.	</li>										
+								</ul>
+
+								<h3>🔍 Difficulty Identifying Own Snake in Multiplayer</h3>
+								<ul>						
+									<li><b>Issue Identified</b><br>Users couldn't easily recognize which snake belonged to them.</li>
+									<li><b>Design Solution</b><br>Added player name tags and subtle glow effects.</li>										
+								</ul>
+								<div class="image main"><img src="images/before2.png" alt="gif" /></div>
+								
+
+								<h3>⌨️ Keyboard Focus Visibility Issues on Skin Selection Screen</h3>
+								<ul>						
+									<li><b>Issue Identified</b><br>Focus indicators were not prominent, leading to confusion.</li>
+									<li><b>Design Solution</b><br>Improved focus visibility with bold highlights and contrasting outlines.	</li>										
+									<div class="image main"><img src="images/before3.png" alt="gif" /></div>
+								</ul>
+									
+								<hr>
+								<h2>🌓Key Takeaways & Reflections</h2>
+								<p>After multiple design iterations, the final game UI meets accessibility standards by implementing:</p>
+								<ul>
+									<li><b>🌟What I Learned:</b> Accessibility-first design makes games more enjoyable for all users</li>
+									<li><b>🌟Biggest Challenge:</b> Balancing game mechanics, accessibility features, and intuitive design</li>
+									<li><b>🌟Next Steps:</b> Applying inclusive design principles to future projects and refining accessibility strategies</li>
+								</ul>
+
+								<a href="https://drive.google.com/file/d/1WREZiQfAUqkzFjw_ywA8xCFux-B1X0o7/view?usp=sharing" class="button"  target="_blank">Link to the full document</a>
+<!-- 								
+								<h2>👩‍🦽Accessibility Compliance</h2>
+								<p>After multiple design iterations, the final game UI meets accessibility standards by implementing:</p>
+								<ul>
+									<li><b>🌟Keyboard & Controller Accessibility –</b> Fully navigable via keyboard & controller</li>
+									<li><b>🌟High-Contrast UI –</b> Ensured readability for visually impaired users</li>
+									<li><b>🌟Adjustable Settings –</b> Users can modify text size, button size, and color themes</li>
+									<li><b>🌟Audio Subtitles & Visual Feedback –</b> Essential for hearing-impaired players</li>
+								</ul>
+								
+								<h3>📏 WCAG Compliance Highlights:</h3>
+								<ul>
+									<li><b>☀️Keyboard Accessibility (WCAG 2.1.1) –</b> Fully navigable via keyboard & controller</li>
+									<li><b>☀️Color Contrast (WCAG 1.4.3 & 1.4.11) –</b> Ensured readability for visually impaired users</li>
+									<li><b>☀️Adjustable Text & Controls (WCAG 2.5.5 & 2.2.3) –</b> Users can modify text size, button size, and color themes</li>
+									<li><b>☀️Audio Subtitles & Visual Feedback –</b> Essential for hearing-impaired players</li>
+								</ul> -->
+							
+							
+							</section>
+					</div>
+
+				<!-- Footer -->
+				<footer id="footer">
+						
+					<section class="split contact">
+						<!-- <section class="alt">
+							<h3>Address</h3>
+							<p>1234 Somewhere Road #87257<br />
+							Nashville, TN 00000-0000</p>
+						</section> -->
+						<section>
+							<h3>Phone</h3>
+							<p>+44 778 812 3505</a></p>
+						</section>
+						<section>
+							<h3>Email</h3>
+							<p>Pantareesomcharoen@gmail.com</a></p>
+						</section>
+						<section>
+							<h3>Social</h3>
+							<ul class="icons alt">
+								<li><a href="https://www.linkedin.com/in/pantaree-somcharoen-759278349" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
+						<li><a href="https://github.com/PantareeBew" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+							</ul>
+						</section>
+					</section>
+				</footer>
+						<!-- <section>
+							<form method="post" action="#">
+								<div class="fields">
+									<div class="field">
+										<label for="name">Name</label>
+										<input type="text" name="name" id="name" />
+									</div>
+									<div class="field">
+										<label for="email">Email</label>
+										<input type="text" name="email" id="email" />
+									</div>
+									<div class="field">
+										<label for="message">Message</label>
+										<textarea name="message" id="message" rows="3"></textarea>
+									</div>
+								</div>
+								<ul class="actions">
+									<li><input type="submit" value="Send Message" /></li>
+								</ul>
+							</form>
+						</section>
+						<section class="split contact">
+							<section class="alt">
+								<h3>Address</h3>
+								<p>1234 Somewhere Road #87257<br />
+								Nashville, TN 00000-0000</p>
+							</section>
+							<section>
+								<h3>Phone</h3>
+								<p><a href="#">(000) 000-0000</a></p>
+							</section>
+							<section>
+								<h3>Email</h3>
+								<p><a href="#">info@untitled.tld</a></p>
+							</section>
+							<section>
+								<h3>Social</h3>
+								<ul class="icons alt">
+									<li><a href="#" class="icon brands alt fa-twitter"><span class="label">Twitter</span></a></li>
+									<li><a href="#" class="icon brands alt fa-facebook-f"><span class="label">Facebook</span></a></li>
+									<li><a href="#" class="icon brands alt fa-instagram"><span class="label">Instagram</span></a></li>
+									<li><a href="#" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
+								</ul>
+							</section>
+						</section> -->
+					</footer>
+
+		
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
